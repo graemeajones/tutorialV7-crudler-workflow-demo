@@ -1,0 +1,14 @@
+$BorderGrey: LightGrey;
+
+div.moduleView {
+  // Appearance
+  width: 100%;
+  padding: 20px;
+  border: 1px solid $BorderGrey;
+  border-radius: 5px;
+
+  // Layout
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

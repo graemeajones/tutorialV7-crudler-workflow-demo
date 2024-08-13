@@ -1,0 +1,55 @@
+$Red: #edafb8; // Rose
+$DarkRed: darken($Red, 20%);
+$HoverGreen: lighten(LimeGreen, 45%);
+
+p.moduleListMessage {
+  width: 100%;
+  text-align: center;
+}
+
+div.moduleList {
+  div.moduleListItem {
+    // Appearance
+    width: 100%;
+    height: 70px;
+
+    &:hover {
+      background: $HoverGreen;
+    }
+
+    // Layout
+    display: flex;
+
+    // Children
+    div.moduleListImage {
+      width: 100px;
+      min-width: 100px;
+      border-top: 1px solid DimGray;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    div.moduleListDetails {
+      // Appearance
+      padding: 0 5px;
+      flex: 1;
+      border-top: 1px solid LightGrey;
+
+      p.moduleListTitle {
+        font-size: 90%;
+      }
+
+      p.moduleListLeader {
+        font-size: 80%;
+        color: Grey;
+
+        &.moduleListNoLeader {
+          color: $DarkRed;
+        }
+      }
+    }
+  }
+}
